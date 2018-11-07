@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PIN Fast Charging</string>
+    <string name="pinLevel">number %</string>
+</resources>
