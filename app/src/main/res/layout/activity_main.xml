@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@drawable/background_shape"
     android:fillViewport="true"
@@ -127,10 +128,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
-                    <ImageView
-                        android:src="@drawable/ic_launcher_background"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:src="@drawable/ic_temperature"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
 
                     <TextView
                         android:text="@string/pin_temperature"
@@ -154,10 +155,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
-                    <ImageView
-                        android:src="@drawable/ic_launcher_background"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:src="@drawable/ic_voltage"
+                        android:padding="8dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
 
                     <TextView
                         android:text="@string/pin_voltage"
@@ -177,16 +179,17 @@
                     <TextView
                         android:text="@string/battery_capacity"
                         android:textColor="#6471cf"
-                        android:textSize="16sp"
+                        android:textSize="12sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
-                    <ImageView
-                        android:src="@drawable/ic_launcher_background"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:src="@drawable/ic_battery_capacity"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" />
 
                     <TextView
+                        android:id="@+id/tv_battery_capacity"
                         android:text="@string/pin_capacity"
                         android:textSize="16sp"
                         android:textColor="#fd9a01"
@@ -222,8 +225,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
-                    <ImageView
-                        android:src="@drawable/ic_launcher_background"
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:src="@drawable/ic_type_of_device"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
@@ -250,8 +253,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
-                    <ImageView
-                        android:src="@drawable/ic_launcher_background"
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:src="@drawable/ic_battery_status"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
@@ -293,8 +296,9 @@
                     android:layout_height="match_parent"
                     tools:ignore="NestedWeights">
 
-                    <ImageView
-                        android:src="@drawable/ic_launcher_background"
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_wifi"
+                        android:src="@drawable/ic_wifi"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
@@ -314,8 +318,9 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:src="@drawable/ic_launcher_background"
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_bluetooth"
+                        android:src="@drawable/ic_bluetooth"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
@@ -335,8 +340,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:src="@drawable/ic_launcher_background"
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:src="@drawable/ic_icon_brightness"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
@@ -369,8 +374,9 @@
                     android:layout_height="match_parent"
                     tools:ignore="NestedWeights">
 
-                    <ImageView
-                        android:src="@drawable/ic_launcher_background"
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_gps"
+                        android:src="@drawable/ic_icon_gps"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
@@ -390,8 +396,9 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:src="@drawable/ic_launcher_background"
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_sync"
+                        android:src="@drawable/ic_icon_sync"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
@@ -411,8 +418,10 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:src="@drawable/ic_launcher_background"
+                    <TextView
+                        android:text="@string/timeout"
+                        android:textSize="24sp"
+                        android:textColor="#fd9a01"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
