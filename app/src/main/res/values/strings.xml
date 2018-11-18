@@ -1,4 +1,24 @@
 <resources>
     <string name="app_name">PIN Fast Charging</string>
-    <string name="pinLevel">number %</string>
+    <string name="pinLevel">pin %</string>
+    <string name="charge_state">Charge state</string>
+    <string name="time_remaining">time remaining</string>
+    <string name="time_remain_value">0h 00m</string>
+    <string name="state">Start</string>
+    <string name="pin_temperature">temperature</string>
+    <string name="temperature">Temperature</string>
+    <string name="voltage">Voltage</string>
+    <string name="pin_voltage">voltage</string>
+    <string name="battery_capacity">Battery Capacity</string>
+    <string name="pin_capacity">capacity</string>
+    <string name="type_of_device">Type Of Device</string>
+    <string name="pin_typeofdevice">typeofdevice</string>
+    <string name="battery_status">Battery Status</string>
+    <string name="pin_battery_status">status</string>
+    <string name="wifi">Wifi</string>
+    <string name="bluetooth">Bluretooth</string>
+    <string name="brightness">Brightness</string>
+    <string name="gps">Gps</string>
+    <string name="sync">Sync</string>
+    <string name="timeout">Timeout</string>
 </resources>
