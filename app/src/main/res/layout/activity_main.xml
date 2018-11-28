@@ -16,10 +16,8 @@
         android:layout_height="match_parent"
         android:stretchColumns="1">
 
-        <include layout="@layout/appbar_layout"></include>
-
         <LinearLayout
-            android:background="@drawable/item_shape"
+            android:background="#19000000"
             android:orientation="horizontal"
             android:weightSum="2"
             android:layout_marginTop="8dp"
@@ -76,6 +74,7 @@
                     android:layout_height="wrap_content" />
 
                 <TextView
+                    android:id="@+id/tv_time_remaining"
                     android:text="@string/time_remain_value"
                     android:textColor="@color/colorWhite"
                     android:textSize="24sp"
@@ -101,7 +100,7 @@
             android:weightSum="2"
             android:orientation="vertical"
             android:layout_marginTop="8dp"
-            android:background="@drawable/item_shape"
+            android:background="#19000000"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -128,12 +127,24 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:src="@drawable/ic_temperature"
+                    <RelativeLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
                         android:layout_width="70dp"
-                        android:layout_height="70dp" />
+                        android:layout_height="70dp"
+                        android:padding="16dp"
+                        android:background="@drawable/backgroud_item_shape">
+
+                        <ImageView
+                            android:src="@drawable/ic_temperature"
+                            android:tint="@color/colorWhite"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
 
                     <TextView
+                        android:id="@+id/tv_temperature"
                         android:text="@string/pin_temperature"
                         android:textSize="16sp"
                         android:textColor="#fd9a01"
@@ -155,13 +166,24 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:src="@drawable/ic_voltage"
-                        android:padding="8dp"
+                    <RelativeLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
                         android:layout_width="70dp"
-                        android:layout_height="70dp" />
+                        android:layout_height="70dp"
+                        android:padding="16dp"
+                        android:background="@drawable/backgroud_item_shape">
+
+                        <ImageView
+                            android:src="@drawable/ic_voltage"
+                            android:tint="@color/colorWhite"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
 
                     <TextView
+                        android:id="@+id/tv_voltage"
                         android:text="@string/pin_voltage"
                         android:textSize="16sp"
                         android:textColor="#fd9a01"
@@ -179,14 +201,25 @@
                     <TextView
                         android:text="@string/battery_capacity"
                         android:textColor="#6471cf"
-                        android:textSize="12sp"
+                        android:textSize="14sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
-                    <de.hdodenhof.circleimageview.CircleImageView
+                    <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:padding="16dp"
+                    android:background="@drawable/backgroud_item_shape">
+
+                    <ImageView
                         android:src="@drawable/ic_battery_capacity"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp" />
+                        android:tint="@color/colorWhite"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
 
                     <TextView
                         android:id="@+id/tv_battery_capacity"
@@ -225,12 +258,24 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:src="@drawable/ic_type_of_device"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                    <RelativeLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:padding="16dp"
+                        android:background="@drawable/backgroud_item_shape">
+
+                        <ImageView
+                            android:src="@drawable/ic_type_of_device"
+                            android:tint="@color/colorWhite"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
 
                     <TextView
+                        android:id="@+id/tv_typeofdevice"
                         android:text="@string/pin_typeofdevice"
                         android:textSize="16sp"
                         android:textColor="#fd9a01"
@@ -253,12 +298,24 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:src="@drawable/ic_battery_status"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                    <RelativeLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:padding="16dp"
+                        android:background="@drawable/backgroud_item_shape">
+
+                        <ImageView
+                            android:src="@drawable/ic_battery_status"
+                            android:tint="@color/colorWhite"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
 
                     <TextView
+                        android:id="@+id/tv_health"
                         android:text="@string/pin_battery_status"
                         android:textSize="16sp"
                         android:textColor="#fd9a01"
@@ -273,7 +330,7 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_marginTop="8dp"
-            android:background="@drawable/item_shape"
+            android:background="#19000000"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -296,11 +353,12 @@
                     android:layout_height="match_parent"
                     tools:ignore="NestedWeights">
 
-                    <de.hdodenhof.circleimageview.CircleImageView
+                    <ImageView
                         android:id="@+id/img_wifi"
                         android:src="@drawable/ic_wifi"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:tint="@color/colorWhiteDark"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp" />
 
                     <TextView
                         android:text="@string/wifi"
@@ -318,11 +376,12 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent">
 
-                    <de.hdodenhof.circleimageview.CircleImageView
+                    <ImageView
                         android:id="@+id/img_bluetooth"
                         android:src="@drawable/ic_bluetooth"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:tint="@color/colorWhiteDark"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp" />
 
                     <TextView
                         android:text="@string/bluetooth"
@@ -340,10 +399,12 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent">
 
-                    <de.hdodenhof.circleimageview.CircleImageView
+                    <ImageView
+                        android:id="@+id/img_brightness"
                         android:src="@drawable/ic_icon_brightness"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:tint="@color/colorWhiteDark"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp" />
 
                     <TextView
                         android:text="@string/brightness"
@@ -374,11 +435,12 @@
                     android:layout_height="match_parent"
                     tools:ignore="NestedWeights">
 
-                    <de.hdodenhof.circleimageview.CircleImageView
+                    <ImageView
                         android:id="@+id/img_gps"
                         android:src="@drawable/ic_icon_gps"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:tint="@color/colorWhiteDark"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp" />
 
                     <TextView
                         android:text="@string/gps"
@@ -396,11 +458,12 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent">
 
-                    <de.hdodenhof.circleimageview.CircleImageView
+                    <ImageView
                         android:id="@+id/img_sync"
                         android:src="@drawable/ic_icon_sync"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:tint="@color/colorWhiteDark"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"/>
 
                     <TextView
                         android:text="@string/sync"

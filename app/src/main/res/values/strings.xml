@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PIN Fast Charging</string>
+    <string name="app_name">Fast Charge</string>
     <string name="pinLevel">pin %</string>
     <string name="charge_state">Charge state</string>
     <string name="time_remaining">time remaining</string>
